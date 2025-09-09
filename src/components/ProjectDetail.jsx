@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import CardWeb from '../assets/card/web'
 import Navbar from './Navbar'
 import Footer from './Footer'
@@ -35,13 +35,13 @@ const ProjectDetail = () => {
     <>
       <Navbar />
       <div className="py-20 bg-gray-100 px-4 sm:px-6 lg:px-12">
-        <a
-          href="/"
+        <Link
+          to="/"
           className="flex items-center gap-2 my-3 px-4 py-2 bg-gradient-to-r from-purple-500 to-blue-400 w-fit rounded"
         >
           <i className="fa-solid fa-arrow-left text-white"></i>
           <p className="text-white font-semibold text-sm sm:text-base">Kembali</p>
-        </a>
+        </Link>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-12">
           <section className="flex flex-col">
